@@ -29,22 +29,18 @@ body{
 
 header{
     grid-area: head;
-    border: 1px solid black;
 }
 
 section{
     grid-area: section;
-    border: 1px solid black;
 }
 
 main{
     grid-area: main;
-    border: 1px solid black;
 }
 
 footer{
     grid-area: foot;
-    border: 1px solid black;
 }
 
 #logo{
@@ -123,4 +119,90 @@ footer{
 .fa-brands:hover{
     color: var(--softMagenta);
     border: 1px solid var(--softMagenta);
+}
+
+/*****************************************************************************************************/
+
+@media all and (max-width:650px){
+    body{
+        background : url(images/bg-mobile.svg), var(--violet);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #logo img{
+        margin: 0;
+    }
+
+    #logo{
+        margin: 10% 50% 0 0;
+    }
+
+    #left-side{
+        background-position: center ;
+        background-size: contain; 
+        height: 400px;
+        width: 100%;
+    }
+
+    #right-side{
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right-side h1{
+       text-align: center;
+    }
+
+    #right-side p{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #social-media{
+        justify-content:center;
+        border: 0;
+        margin-bottom: 4rem;
+    }
+
+    #social-media ul{
+        margin: 0;
+    }
+}
+
+
+@media all and (max-width:420px){
+    #logo{
+        margin: 10% 25% 0 0;
+    }
+
+    #left-side{
+        height: 250px;
+        width: 100%;
+    }
+
+    #right-side h1{
+        font-size: 25px;
+    }
+
+    #right-side p{
+        margin-bottom: 10%;
+        font-size: 15px;
+        width: 75%;
+    }
+}
+
+@media all and (max-width:300px){
+    #logo{
+        margin: 10% 10% 0 0;
+    }
 }
